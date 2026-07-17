@@ -1,0 +1,706 @@
+/* Reset básico para limpar estilos padrões do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   NOVO CABEÇALHO E BARRA DE NAVEGAÇÃO
+   ========================================== */
+
+/* Ajuste no cabeçalho geral */
+header {
+    background: linear-gradient(135deg, #1b4d3e 0%, #113329 100%); /* Degradê moderno */
+    color: #ffffff;
+    padding-bottom: 4rem; /* Dá espaço para o conteúdo flutuante de baixo */
+}
+
+/* Barra de Navegação */
+.navbar {
+    background-color: rgba(27, 77, 62, 0.95); /* Fundo levemente transparente */
+    backdrop-filter: blur(10px); /* Efeito vidro borrado atrás */
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: sticky; /* Deixa a barra fixa no topo ao rolar a página */
+    top: 0;
+    z-index: 1000;
+}
+
+/* Alinhamento dos itens da navbar */
+.nav-container {
+    display: flex;
+    justify-content: space-between; /* Logo na esquerda, links na direita */
+    align-items: center;
+}
+
+/* Logo do site */
+.logo {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #2ecc71; /* Destaque em verde claro financeiro */
+}
+
+/* Links da navegação */
+.nav-links {
+    list-style: none; /* Remove as bolinhas da lista */
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* Espaço entre os links */
+}
+
+.nav-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #2ecc71; /* Cor muda ao passar o mouse */
+}
+
+/* Botão de Destaque na Navbar */
+.btn-nav {
+    background-color: #2ecc71;
+    color: #1b4d3e !important; /* Força o texto a ficar verde escuro */
+    padding: 0.5rem 1.2rem;
+    border-radius: 50px; /* Bordas arredondadas estilo pílula */
+    font-weight: bold !important;
+    transition: transform 0.2s ease, background-color 0.3s ease !important;
+}
+
+.btn-nav:hover {
+    background-color: #27ae60;
+    transform: translateY(-2px); /* Efeito leve de flutuar ao passar o mouse */
+}
+
+/* Banner de Conteúdo (Hero) */
+.hero-content {
+    text-align: center;
+    padding: 4rem 0 2rem 0;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.hero-content p {
+    font-size: 1.15rem;
+    opacity: 0.9;
+    max-width: 650px;
+    margin: 0 auto 2rem auto; /* Centraliza o parágrafo e afasta dos botões */
+}
+
+/* Botões de Ação no Meio do Banner */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Estilo Base dos Botões */
+.btn-principal, .btn-secundario {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Botão Principal Verde Claro */
+.btn-principal {
+    background-color: #2ecc71;
+    color: #1b4d3e;
+    box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+}
+
+.btn-principal:hover {
+    background-color: #27ae60;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(46, 204, 113, 0.4);
+}
+
+/* Botão Secundário Transparente/Borda Branca */
+.btn-secundario {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn-secundario:hover {
+    border-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Box de Introdução */
+.intro-box {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin-top: -2rem; /* Faz o box flutuar sobre o banner */
+    margin-bottom: 2.5rem;
+}
+
+.intro-box h2 {
+    color: #1b4d3e;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Layout de cards lado a lado */
+.regra-container {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap; /* Ajusta para celular automaticamente */
+}
+
+.regra-card {
+    flex: 1;
+    min-width: 250px;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-top: 5px solid;
+}
+
+.essencial {
+    background-color: #e8f5e9;
+    border-top-color: #2e7d32;
+}
+
+.desejos {
+    background-color: #fff8e1;
+    border-top-color: #f57f17;
+}
+
+.futuro {
+    background-color: #e3f2fd;
+    border-top-color: #1565c0;
+}
+
+.regra-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* Seção de Passos */
+.passos-section {
+    margin-bottom: 3rem;
+}
+
+.passos-section h2 {
+    color: #1b4d3e;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.passo {
+    display: flex;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.numero {
+    background-color: #1b4d3e;
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.passo-texto h3 {
+    color: #2c3e50;
+    margin-bottom: 0.3rem;
+}
+
+/* Rodapé */
+footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+}
+
+/* ==========================================
+   REGRAS PARA CELULARES (Telas até 768px)
+   ========================================== */
+
+   /* ==========================================
+   TABELA COMPARATIVA DE INVESTIMENTOS
+   ========================================== */
+
+.investimentos-section {
+    margin-bottom: 4rem;
+}
+
+.investimentos-section h2 {
+    color: #1b4d3e;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitulo {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+/* Container responsivo para evitar quebras no celular */
+.tabela-responsiva {
+    width: 100%;
+    overflow-x: auto; /* Adiciona rolagem lateral se a tela for menor que a tabela */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilo geral da tabela */
+.tabela-comparativa {
+    width: 100%;
+    border-collapse: collapse; /* Une as bordas das células */
+    background-color: #ffffff;
+    text-align: left;
+    min-width: 650px; /* Garante que ela mantenha a estrutura mínima legível */
+}
+
+/* Estilo do Cabeçalho */
+.tabela-comparativa th {
+    background-color: #1b4d3e;
+    color: #ffffff;
+    padding: 1.2rem 1rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Estilo das Linhas e Células */
+.tabela-comparativa td {
+    padding: 1.2rem 1rem;
+    border-bottom: 1px solid #eef2f5;
+    color: #2c3e50;
+    font-size: 0.95rem;
+}
+
+/* Efeito de destaque ao passar o mouse na linha */
+.tabela-comparativa tbody tr:hover {
+    background-color: #f8faf9;
+    transition: background-color 0.2s ease;
+}
+
+/* Destaque sutil para a melhor opção (CDB) */
+.tabela-comparativa tr.destaque-linha {
+    background-color: #f1f9f5;
+}
+
+.tabela-comparativa tr.destaque-linha td {
+    font-weight: 500;
+}
+
+/* Estilização da primeira coluna (Nomes) */
+.nome-investimento {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nome-investimento span {
+    font-size: 1.2rem;
+}
+
+/* Cores específicas para os nomes se desejar */
+.poupanca { color: #e74c3c; } /* Vermelho */
+.cdb { color: #2ecc71; }       /* Verde */
+.tesouro { color: #2980b9; }   /* Azul */
+
+/* ==========================================
+   CALCULADORA DE RESERVA
+   ========================================== */
+
+.calculadora-section {
+    margin-bottom: 4rem;
+}
+
+.calculadora-section h2 {
+    color: #1b4d3e;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.calculadora-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 2.5rem;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+/* Formulário de Entrada */
+.calc-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.calc-form label {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 1.05rem;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 0.2rem 1rem;
+    background-color: #f8fafc;
+    transition: border-color 0.3s ease;
+}
+
+.input-wrapper:focus-within {
+    border-color: #2ecc71; /* Borda fica verde quando clica no campo */
+}
+
+.moeda {
+    color: #94a3b8;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.input-wrapper input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 1.2rem;
+    color: #2c3e50;
+    width: 100%;
+    padding: 0.6rem 0;
+}
+
+/* Oculta as setinhas chatas do input do tipo number */
+.input-wrapper input::-webkit-outer-spin-button,
+.input-wrapper input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Box de Resultado */
+.calc-resultado {
+    flex: 1;
+    background-color: #f1f9f5;
+    border-left: 6px solid #2ecc71;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    /* Começa invisível ou neutra e ganha destaque ao calcular */
+    transition: all 0.3s ease;
+}
+
+.calc-resultado h3 {
+    font-size: 1.1rem;
+    color: #1b4d3e;
+    margin-bottom: 0.8rem;
+}
+
+.valor-reserva {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1b4d3e;
+    margin-bottom: 1rem;
+}
+
+.detalhe-reserva {
+    font-size: 0.95rem;
+    color: #55606d;
+}
+
+.destaque {
+    color: #27ae60;
+}
+
+/* ==========================================
+   BOTÕES DE SELEÇÃO DE PERFIL
+   ========================================== */
+
+.perfil-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn-perfil {
+    flex: 1;
+    background-color: #f8fafc;
+    border: 2px solid #e2e8f0;
+    color: #475569;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+    transition: all 0.2s ease;
+}
+
+.btn-perfil small {
+    font-weight: normal;
+    font-size: 0.75rem;
+    color: #64748b;
+}
+
+/* Estado do botão quando passa o mouse por cima */
+.btn-perfil:hover {
+    border-color: #cbd5e1;
+    background-color: #f1f5f9;
+}
+
+/* Estado ativo (quando o perfil estiver selecionado) */
+.btn-perfil.ativo {
+    border-color: #2ecc71;
+    background-color: #f1f9f5;
+    color: #1b4d3e;
+}
+
+.btn-perfil.ativo small {
+    color: #27ae60;
+}
+
+/* ==========================================
+   SEÇÃO DE PERGUNTAS FREQUENTES (FAQ)
+   ========================================== */
+
+.faq-section {
+    margin-bottom: 4rem;
+}
+
+.faq-section h2 {
+    color: #1b4d3e;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* O container principal de cada pergunta */
+.faq-item {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden; /* Garante que as bordas fiquem arredondadas */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de destaque quando a pergunta estiver aberta */
+.faq-item[open] {
+    border-color: #2ecc71;
+    box-shadow: 0 4px 15px rgba(46, 204, 113, 0.1);
+}
+
+/* O título da pergunta (onde o usuário clica) */
+.faq-item summary {
+    padding: 1.2rem 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    cursor: pointer;
+    list-style: none; /* Remove a setinha cinza padrão do Chrome/Firefox */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none; /* Evita que o texto fique selecionado ao clicar rápido */
+}
+
+/* Remove a setinha padrão no Safari */
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Criamos a nossa própria setinha elegante usando CSS puro */
+.faq-item summary::after {
+    content: "▲";
+    font-size: 0.8rem;
+    color: #94a3b8;
+    transform: rotate(180deg); /* Começa apontando para baixo */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Quando o item estiver aberto ([open]), giramos a setinha para cima */
+.faq-item[open] summary::after {
+    transform: rotate(0deg);
+    color: #2ecc71;
+}
+
+/* Efeito ao passar o mouse sobre a pergunta */
+.faq-item summary:hover {
+    background-color: #f8fafc;
+    color: #1b4d3e;
+}
+
+/* O bloco de resposta interna */
+.faq-resposta {
+    padding: 0 1.5rem 1.5rem 1.5rem; /* Margem apenas nas laterais e embaixo */
+    border-top: 1px solid #f1f5f9;
+    background-color: #fcfdfe;
+    animation: deslizar 0.3s ease-out; /* Efeito suave ao abrir */
+}
+
+.faq-resposta p {
+    color: #475569;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Animação simples para a resposta surgir suavemente */
+@keyframes deslizar {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .perfil-container {
+        flex-direction: column; /* Empilha os botões no celular */
+        gap: 0.8rem;
+    }
+
+    /* Ajuste da calculadora no celular */
+    .calculadora-container {
+        flex-direction: column;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+    .calc-resultado {
+        width: 100%;
+    }
+
+    /* Ajuste da tabela no celular */
+    .investimentos-section {
+        margin-bottom: 2.5rem;
+    }
+    
+    /* Cria uma indicação visual de que é possível arrastar a tabela para o lado no celular */
+    .tabela-responsiva {
+        border: 1px solid #eef2f5;
+    }
+
+    /* Ajustes da Navbar no Celular */
+    .nav-container {
+        flex-direction: column; /* Empilha a logo e os links verticalmente */
+        gap: 1rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+        padding-left: 0;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    /* Ajustes dos Botões Principais no Celular */
+    .hero-content {
+        padding: 2.5rem 0 1rem 0;
+    }
+
+    .hero-buttons {
+        flex-direction: column; /* Botões ficam um sob o outro no celular */
+        gap: 0.8rem;
+    }
+
+    .btn-principal, .btn-secundario {
+        width: 100%; /* Botão ocupa toda a largura da tela */
+        text-align: center;
+    }
+    
+    /* 1. Ajusta o tamanho dos textos do cabeçalho */
+    header {
+        padding: 2rem 1rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem; /* Texto um pouco menor para não quebrar linha feio */
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    /* 2. Diminui o espaçamento interno do bloco flutuante */
+    .intro-box {
+        padding: 1.5rem 1rem;
+        margin-top: -1rem; /* Aproxima um pouco mais do topo */
+        margin-bottom: 1.5rem;
+    }
+
+    /* 3. Empilha os cards de regras um embaixo do outro */
+    .regra-container {
+        flex-direction: column; /* Em vez de lado a lado, ficam em lista */
+        gap: 1rem;
+    }
+
+    /* 4. Ajusta os 3 passos práticos */
+    .passo {
+        flex-direction: column; /* Coloca o número acima do texto */
+        text-align: center;      /* Centraliza o conteúdo */
+        padding: 1.2rem;
+        gap: 1rem;
+    }
+
+    .numero {
+        width: 45px;
+        height: 45px;
+        font-size: 1.5rem;
+    }
+}

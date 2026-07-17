@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanças Práticas - Guia Iniciante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+       <!-- Cabeçalho Principal com Barra de Navegação -->
+    <header>
+        <!-- Barra de Navegação Superior -->
+        <nav class="navbar">
+            <div class="container nav-container">
+                <a href="#" class="logo">🏦 Finanças<span>Descomplicadas</span></a>
+                
+                <ul class="nav-links">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Regra 50/30/20</a></li>
+                    <li><a href="#">Passos</a></li>
+                    <li><a href="#" class="btn-nav">Simular Agora</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Conteúdo do Banner (Hero) -->
+        <div class="hero-content container">
+            <h1>Organize sua vida financeira</h1>
+            <p>O guia prático e definitivo para você sair do vermelho, poupar e começar a investir seu dinheiro hoje mesmo.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn-principal">Começar Guia</a>
+                <a href="#" class="btn-secundario">Saber Mais</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo do Site -->
+    <main class="container">
+        
+        <!-- Seção de Introdução com Regra de Ouro -->
+        <section class="intro-box">
+            <h2>A Regra de Ouro: 50/30/20</h2>
+            <p>Se você não sabe por onde começar, divida sua renda líquida mensal nestes três pilares:</p>
+            
+            <div class="regra-container">
+                <div class="regra-card essencial">
+                    <h3>50% - Necessidades</h3>
+                    <p>Gastos fixos e essenciais para viver (aluguel, água, luz, mercado, transporte).</p>
+                </div>
+                <div class="regra-card desejos">
+                    <h3>30% - Desejos</h3>
+                    <p>Gastos variáveis e estilo de vida (lazer, restaurantes, assinaturas, compras).</p>
+                </div>
+                <div class="regra-card futuro">
+                    <h3>20% - Futuro</h3>
+                    <p>Poupança, pagamento de dívidas ou investimentos de longo prazo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Três Passos Práticos -->
+        <section class="passos-section">
+            <h2>3 Passos Práticos para Começar</h2>
+            
+            <div class="passo">
+                <div class="numero">1</div>
+                <div class="passo-texto">
+                    <h3>Rastreie cada centavo</h3>
+                    <p>Antes de cortar gastos, você precisa saber para onde o dinheiro está indo. Use uma planilha, um aplicativo ou um caderno para anotar tudo durante 30 dias.</p>
+                </div>
+            </div>
+
+            <div class="passo">
+                <div class="numero">2</div>
+                <div class="passo-texto">
+                    <h3>Crie sua Reserva de Emergência</h3>
+                    <p>Guarde o equivalente a 3 a 6 meses do seu custo de vida em uma conta segura e de fácil resgate (como Tesouro Selic ou CDB de liquidez diária).</p>
+                </div>
+            </div>
+
+            <div class="passo">
+                <div class="numero">3</div>
+                <div class="passo-texto">
+                    <h3>Pague-se primeiro</h3>
+                    <p>Assim que o salário cair na conta, separe a sua meta de investimento (os 20%) imediatamente, em vez de investir apenas o que "sobrar" no fim do mês.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Comparativa de Investimentos -->
+        <section class="investimentos-section">
+            <h2>Onde Guardar seu Dinheiro?</h2>
+            <p class="section-subtitulo">Compare as principais opções de renda fixa para a sua reserva de emergência ou metas.</p>
+
+            <!-- Div que permite rolagem lateral suave no celular se necessário -->
+            <div class="tabela-responsiva">
+                <table class="tabela-comparativa">
+                    <thead>
+                        <tr>
+                            <th>Investimento</th>
+                            <th>Rendimento Aproximado</th>
+                            <th>Liquidez (Resgate)</th>
+                            <th>Segurança</th>
+                            <th>Indicado Para</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="nome-investimento poupanca">
+                                <span>📉</span> Poupança
+                            </td>
+                            <td>Baixo (Menor que a inflação)</td>
+                            <td>Imediato (Qualquer hora)</td>
+                            <td>Muito Alta (FGC)</td>
+                            <td>Quem quer extrema simplicidade</td>
+                        </tr>
+                        <tr class="destaque-linha">
+                            <td class="nome-investimento cdb">
+                                <span>⭐</span> CDB 100% CDI
+                            </td>
+                            <td>Excelente (100% da Taxa Selic)</td>
+                            <td>Diária (Dias úteis)</td>
+                            <td>Muito Alta (FGC)</td>
+                            <td>Reserva de Emergência</td>
+                        </tr>
+                        <tr>
+                            <td class="nome-investimento tesouro">
+                                <span>🏛️</span> Tesouro Selic
+                            </td>
+                            <td>Excelente (Taxa Selic + Ágio)</td>
+                            <td>Diária (D+1)</td>
+                            <td>Máxima (Garantia do Governo)</td>
+                            <td>Reserva e metas de curto prazo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Seção da Calculadora de Reserva -->
+        <section class="calculadora-section">
+            <h2>Calcule sua Reserva de Emergência</h2>
+            <p class="section-subtitulo">Descubra quanto você precisa poupar para ter segurança financeira completa.</p>
+
+            <div class="calculadora-container">
+                <div class="calc-form">
+                    <label for="gastos">Qual é o seu custo de vida mensal? (R$)</label>
+                    <div class="input-wrapper">
+                        <span class="moeda">R$</span>
+                        <input type="number" id="gastos" placeholder="Ex: 2500" min="0">
+                    </div>
+
+                    <!-- Novos Botões de Seleção de Perfil -->
+                    <label>Qual é a sua estabilidade profissional?</label>
+                    <div class="perfil-container">
+                        <button type="button" class="btn-perfil ativo" data-meses="6" id="btn-clt">
+                            💼 CLT <small>(Recomendado: 6 meses)</small>
+                        </button>
+                        <button type="button" class="btn-perfil" data-meses="12" id="btn-autonomo">
+                            🚀 Autônomo <small>(Recomendado: 12 meses)</small>
+                        </button>
+                    </div>
+
+                    <button id="btn-calcular" class="btn-principal">Calcular Reserva</button>
+                </div>
+
+                <div class="calc-resultado" id="resultado-box">
+                    <h3>Sua Reserva Ideal deve ser de:</h3>
+                    <div class="valor-reserva">R$ <span id="valor-total">0,00</span></div>
+                    <p class="detalhe-reserva">Este valor garante a sua tranquilidade por <strong class="destaque">6 meses</strong> caso você perca sua fonte de renda principal.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Perguntas Frequentes (FAQ) -->
+        <section class="faq-section">
+            <h2>Dúvidas Frequentes</h2>
+            <p class="section-subtitulo">Separamos as principais respostas para ajudar você a dar os primeiros passos.</p>
+
+            <div class="faq-container">
+                
+                <details class="faq-item">
+                    <summary>O que é e como funciona a Reserva de Emergência?</summary>
+                    <div class="faq-resposta">
+                        <p>A Reserva de Emergência é um montante de dinheiro guardado exclusivamente para imprevistos (como despesas médicas, conserto de carro ou perda de renda). Ela deve cobrir de 6 a 12 meses do seu custo de vida e estar investida em uma opção segura e de fácil resgate (liquidez imediata).</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>A Poupança ainda vale a pena para deixar o dinheiro?</summary>
+                    <div class="faq-resposta">
+                        <p>Hoje em dia, <strong>não vale a pena</strong>. O rendimento da poupança é muito baixo e frequentemente perde para a inflação (o que faz seu dinheiro perder poder de compra). Opções como CDB 100% CDI ou Tesouro Selic rendem cerca de 30% a 40% mais que a poupança, mantendo a mesma segurança.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>O que significa a sigla "CDI"?</summary>
+                    <div class="faq-resposta">
+                        <p>CDI significa <strong>Certificado de Depósito Interbancário</strong>. É uma taxa de juros que os bancos cobram para emprestar dinheiro entre si de um dia para o outro. Ela anda coladinha com a Taxa Selic (a taxa básica de juros do país). Por isso, quando um investimento rende "100% do CDI", significa que ele rende o equivalente a essa taxa de juros praticada no mercado.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Quanto preciso para começar a investir?</summary>
+                    <div class="faq-resposta">
+                        <p>Diferente do que muitos pensam, você não precisa de muito dinheiro. Com cerca de <strong>R$ 30,00</strong> você já consegue comprar um título do Tesouro Direto. Muitos CDBs de liquidez diária permitem investimentos iniciais a partir de apenas <strong>R$ 1,00</strong> diretamente pelo aplicativo do seu banco digital.</p>
+                    </div>
+                </details>
+
+            </div>
+        </section>
+
+
+    </main>
+
+    
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Finanças Descomplicadas. Feito com foco na sua liberdade financeira.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</body>
+</html>
